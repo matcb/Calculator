@@ -1,0 +1,29 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "calculator made with electron",
+  "main": "main.js",
+  "scripts": {
+  "start": "electron .",
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matcb/scientific-calculator.git"
+  },
+  "keywords": [
+    "calculator",
+    "scientific",
+    "calculator",
+    "electron"
+  ],
+  "author": "matheus barreto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matcb/scientific-calculator/issues"
+  },
+  "homepage": "https://github.com/matcb/scientific-calculator#readme",
+  "devDependencies": {
+    "electron": "^13.1.6"
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <main>
+
+      <div class="calc_container">
+      <h1>calculator</h1>
+
+      <div class="num_valDiv">
+        <input id="num_val" type="text" name="num_val" placeholder="Type a number" readonly>
+        <button type="button" id="result" class="btOp" name="result" onclick="result()">=</button>
+      </div>
+
+      <div class="basicOp" id="basicOp">
+        <button type="button"  id="sum"   class="btOp"   name="sum"   value="+" onclick="display('+')">+</button>
+        <button type="button"  id="sub"   class="btOp"   name="sub"   value="-" onclick="display('-')">-</button>
+        <button type="button"  id="split" class="btOp"   name="split"     value="/" onclick="display('/')">/</button>
+        <button type="button"  id="mult"  class="btOp"  name="mult"    value="*"   onclick="display('*')">*</button>
+        <button type="button" id="clear" class="btOp" name="clear" onclick="clear()">C</button>
+        <button type="button" id="cleanAll" class="btOp" name="cleanAll" onclick="clearAll()">CE</button>
+      </div>
+
+      <div class="flex_numbers">
+        <div class="container1" id="container1">
+          <button type="button" class="numbers" name="one" value="1" onclick="display(1)">1</button>
+          <button type="button" class="numbers" name="two" value="2" onclick="display(2)">2</button>
+          <button type="button" class="numbers" name="tree" value="3" onclick="display(3)">3</button>
+        </div>
+
+        <div class="container2" id="container2">
+          <button type="button" class="numbers" name="four" value="4" onclick="display(4)">4</button>
+          <button type="button" class="numbers" name="five" value="5" onclick="display(5)">5</button>
+          <button type="button" class="numbers" name="six" value="6" onclick="display(6)">6</button>
+        </div>
+
+        <div class="container3" id="container3">
+          <button type="button" class="numbers" name="seven" value="7" onclick="display(7)">7</button>
+          <button type="button" class="numbers" name="eight" value="8" onclick="display(8)">8</button>
+          <button type="button" class="numbers" name="nine" value="9" onclick="display(9)">9</button>
+        </div>
+
+          <div class="container4" id="container4">
+            <button type="button" class="numbers" name="zero" onclick="display(0)"value="0">0</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

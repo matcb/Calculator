@@ -1,0 +1,72 @@
+let opList = document.getElementById('basicOp');
+let _opList = opList.querySelectorAll('button.btOp');
+
+let numList1 = document.getElementById('container1');
+let _numList1 = numList1.querySelectorAll('button.numbers');
+
+let numList2 = document.getElementById('container2');
+let _numList2 = numList2.querySelectorAll('button.numbers');
+
+let numList3 = document.getElementById('container3');
+let _numList3 = numList3.querySelectorAll('button.numbers');
+
+let numList4 = document.getElementById('container4');
+let _numList4 = numList4.querySelectorAll('button.numbers');
+
+let input = document.getElementById('num_val');
+  -->  the code below trough a error saying that the
+       querySelectorAll is not a function.
+
+  let opList = document.getElementsByClassName('');
+  let _opList = opList.querySelectorAll('button.btOp');
+
+
+
+ --> the error in the code below happens because
+     every time that the button is clicked the value
+     of the input changes according with the button clicked
+
+_opList[0].addEventListener('click', () => {
+  input.value = _opList[0].value;
+})
+_opList[1].addEventListener('click', () => {
+  input.value = _opList[1].value;
+})
+_opList[2].addEventListener('click', () => {
+  input.value = _opList[2].value;
+})
+_opList[3].addEventListener('click', () => {
+  input.value = _opList[3].value;
+})
+
+
+_numList1[0].addEventListener('click', () => {
+  input.value = _numList1[0].value;
+})
+_numList1[1].addEventListener('click', () => {
+  input.value = _numList1[1].value;
+})
+_numList1[2].addEventListener('click', () => {
+  input.value = _numList1[2].value;
+})
+
+
+
+_numList2[0].addEventListener('click', () => {
+  input.value = _numList2[0].value;
+})
+_numList2[1].addEventListener('click', () => {
+  input.value = _numList2[1].value;
+})
+_numList2[2].addEventListener('click', () => {
+  input.value = _numList2[2].value;
+})
+
+
+
+_numList3[0].addEventListener('click', () => {
+  input.value = _numList3[0].value;
+})
+_numList3[1].addEventListener('click', () => {
+  input.value = _numList3[1].value;
+})*/
