@@ -1,0 +1,43 @@
+let a = document.querySelector('.numbers')
+let b = document.querySelector('.btOp')
+
+
+result(a,b){
+  
+  switch(b.value)
+  {
+    case +:
+    return a.value + a.value
+    break;
+
+    case -:
+    return a.value - a.value
+    break;
+
+    case *:
+    return a.value * a.value
+    break;
+
+    case /:
+    return a.value / a.value
+    break;
+    
+    default:
+      
+
+
+  }	
+}
+
+
+
+//button result
+<button type="button" id="result" class="btOp" name="result" onclick="result()">=</button>
+//
+<button type="button"  id="sum"   class="btOp"   name="sum"   value="+" onclick="display('+')">+</button>
+//
+<button type="button" class="numbers" name="one" value="1" onclick="display(1)">1</button>
+
+
+
+
